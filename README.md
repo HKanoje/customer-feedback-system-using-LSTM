@@ -1,5 +1,14 @@
 # customer-feedback-system-using-LSTM
 
+## Project Workflows
+- constants
+- config_enity
+- artifact_enity
+- components
+- pipline
+- main
+- app
+
 ## How to run
 
 ```bash
