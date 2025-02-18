@@ -5,4 +5,4 @@ from hate.configuration.gcloud_syncer import GCloudSync
 
 obj = GCloudSync()
 
-obj.sync_folder_from_gcloud("hate-speech-orbot","dataset.zip","download/dataset.zip")
+obj.sync_folder_from_gcloud("hate-speech-orbot","dataset.zip","download/dataset")

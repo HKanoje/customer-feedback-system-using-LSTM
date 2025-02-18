@@ -1,5 +1,6 @@
 numpy
 pandas
+keras
 tensorflow
 matplotlib
 seaborn
