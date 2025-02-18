@@ -39,6 +39,7 @@ jobs:
 workflows:
   CICD:
     jobs:
+    
       - continuous-integration
       - continuous-delivery:
           requires:
