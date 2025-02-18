@@ -12,11 +12,11 @@
 ## How to run
 
 ```bash
-conda create -n hate python=3.8 -y
+py -3.11 -m venv venv
 ```
 
 ```bash
-conda activate hate
+venv\Scripts\activate
 ```
 
 ```bash
