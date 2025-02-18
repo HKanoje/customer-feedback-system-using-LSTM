@@ -10,7 +10,7 @@ jobs:
     steps:
       - setup_remote_docker:
           docker_layer_caching: true
-          
+
       - aws-ecr/build-and-push-image:
           create-repo: true
           dockerfile: Dockerfile
@@ -32,10 +32,10 @@ jobs:
           command: aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 390403875293.dkr.ecr.us-east-1.amazonaws.com
       - run:
           name: pull image from private repository
-          command: docker pull 390403875293.dkr.ecr.us-east-1.amazonaws.com/hatedemoorbot:latest
+          command: docker pull 390403875293.dkr.ecr.us-east-1.amazonaws.com/demo:latest
       - run:
           name: run image
-          command: docker run -d -p 8080:8080 390403875293.dkr.ecr.us-east-1.amazonaws.com/hatedemoorbot:latest
+          command: docker run -d -p 8080:8080 390403875293.dkr.ecr.us-east-1.amazonaws.com/demo:latest
 workflows:
   CICD:
     jobs:
